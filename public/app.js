@@ -4,12 +4,10 @@ const container = document.querySelector('.container');
 
 const loadingAnimation = document.querySelector('.loading-animation-container');
 
-const showContainer = () => {
+window.addEventListener('load', () => {
     loadingAnimation.classList.add('hidden');
     container.classList.remove('hidden');
-}
-
-window.addEventListener('load', showContainer());
+});
 
 
 // navbar mobile
