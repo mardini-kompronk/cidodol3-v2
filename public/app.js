@@ -1,3 +1,17 @@
+// animation loading page 
+
+const container = document.querySelector('.container');
+
+const loadingAnimation = document.querySelector('.loading-animation-container');
+
+const showContainer = () => {
+    loadingAnimation.classList.add('hidden');
+    container.classList.remove('hidden');
+}
+
+window.addEventListener('load', showContainer());
+
+
 // navbar mobile
 
 const navbarMobile = document.querySelector('.navbar-mobile');
@@ -23,16 +37,4 @@ const scrool = (e) => {
     });
 }
 
-// animation loading page 
-
-const container = document.querySelector('.container');
-
-const loadingAnimation = document.querySelector('.loading-animation-container');
-
-const showContainer = () => {
-    loadingAnimation.classList.add('hidden');
-    container.classList.remove('hidden');
-}
-
-window.addEventListener('load', showContainer());
 
