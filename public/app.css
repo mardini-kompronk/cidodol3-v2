@@ -10,6 +10,10 @@ body {
 
 /* hero section */
 
+.hero-section {
+    background-image: url(./img/bg.jpg); height: 600px;
+}
+
 .hero-section::after {
     content: "";
     position: absolute;

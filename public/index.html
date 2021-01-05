@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container overflow-hidden hidden">
         <!-- navbar -->
         <nav class="flex text-xl justify-between items-center w-full h-12  absolute bg-transparent text-white z-20">
             <div class="logo-and-mobile-menu flex px-4">
@@ -35,7 +35,7 @@
             </div>
             <div class="btn-navbar hidden px-8 lg:block">
                 <button
-                    class="cursor-pointer border-white border-solid border-2 px-4 py-0.5 rounded hover:bg-white hover:text-black">Sign
+                    class="focus:outline-none cursor-pointer border-white border-solid border-2 px-4 py-0.5 rounded hover:bg-white hover:text-black">Sign
                     In</button>
             </div>
         </nav>
@@ -45,24 +45,22 @@
             <div onclick="closeNavbar()" class="pt-8">Home</div>
             <div onclick="scrool('.about')" class="pt-8">About</div>
             <div onclick="scrool('.member')" class="pt-8">Member</div>
-            <button class="mt-8 px-8 py-0.5 border-white border-solid border-2 rounded">Sign In</button>
+            <button class="focus:outline-none mt-8 px-8 py-0.5 border-white border-solid border-2 rounded">Sign
+                In</button>
             <div onclick="closeNavbar()" class="close-icon w-8 m-auto pt-8"><svg xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg></div>
         </div>
-        <div class="hero-section bg-cover bg-no-repeat w-screen bg-right relative flex justify-center items-center"
-            style="background-image: url(./img/bg.jpg); height: 600px;">
+        <div class="hero-section bg-cover bg-no-repeat w-screen bg-right relative flex justify-center items-center">
             <div class="text-hero text-white relative z-30 text-center">
                 <h1 data-aos="fade-down" data-aos-delay="1000"
-                    class="font-semibold text-xl md:text-2xl lg:text-3xl tracking-widest font-style">
-                    Let's look back at
-                    our memories
-                </h1><br>
+                    class="font-semibold tracking-widest text-5xl font-style">Our memories
+                </h1><br><br>
                 <div onclick="scrool('.about')" class="arrow-button cursor-pointer animate-bounce text-xl font-style">
-                    <button>Let's
-                        go</button><svg class="w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    <button class="focus:outline-none">Let's
+                        see</button><svg class="w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor">
                         <path fillRule="evenodd"
                             d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z"
@@ -75,7 +73,7 @@
             class="about w-screen mt-16 flex flex-col items-center lg:flex-row lg:justify-center text-center lg:text-left">
             <div data-aos="fade-right" data-aos-delay="500" class="txt-about w-48 m-2">
                 <h3 class="mb-4 text-2xl font-semibold tracking-widest font-style">About Us</h3>
-                <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quas!</p>
+                <p class="opacity-75">"This brief happiness and togetherness should be remembered forever."</p>
             </div>
             <div data-aos="fade-left" data-aos-delay="1000" class="img m-2"><img src="./img/about.jpg" width="300"
                     alt="" srcset=""></div>
@@ -122,6 +120,9 @@
         <footer class="footer w-full bg-blue-500 text-center">
             <p class="p-3 text-white">&copy; 2021 CIDODOL3</p>
         </footer>
+    </div>
+    <div class="loading-animation-container w-screen h-screen flex justify-center items-center">
+        <div class="loading-animation w-6 h-6 rounded-full animate-ping bg-blue-500"></div>
     </div>
     <!-- Aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
