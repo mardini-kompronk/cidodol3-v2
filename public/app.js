@@ -34,5 +34,5 @@ const showContainer = () => {
     container.classList.remove('hidden');
 }
 
-container.addEventListener('load', showContainer());
+window.addEventListener('load', showContainer());
 
